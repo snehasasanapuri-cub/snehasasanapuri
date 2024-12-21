@@ -5,7 +5,7 @@ title: Sneha Sasanapuri
 
 # Sneha Sasanapuri
 
-![Sneha Sasanapuri](assets/Sneha%20Professional%20photo.JPG){: style="border-radius: 50%; width: 150px; display: block; margin: 20px auto;" }
+![Sneha Sasanapuri](assets/Sneha%20Professional%20photo.JPG){: style="width: 150px; display: block; margin: 20px auto;" }
 
 Welcome to my professional portfolio! I am a Data Scientist with expertise in data analytics, machine learning, and process optimization. Explore my projects, download my resume, and connect with me below.
 
