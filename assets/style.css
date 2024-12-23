@@ -1,85 +1,75 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 18px; /* Slightly larger for readability */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f7f9fc url('assets/image1.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #222; /* Darker text for better contrast */
-}
-
-html {
-    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    color: #333;
 }
 
 header {
     text-align: center;
     padding: 40px 0;
-    background: rgba(76, 175, 80, 0.85); /* Semi-transparent overlay */
+    background: url('assets/image1.png') no-repeat center center; /* Background image */
+    background-size: cover; /* Ensures the image fills the header */
     color: white;
 }
 
-.profile-header {
-    margin-bottom: 20px;
-}
-
-.profile-picture {
-    width: 300px; /* Increased size for larger picture */
-    height: 300px;
-    border-radius: 50%; /* Makes the image circular */
-    display: block;
-    margin: 20px auto;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
-}
-
 header h1 {
-    font-size: 2.5rem; /* Adjust the size if needed */
+    font-size: 2.5rem;
     margin: 10px 0;
-    color: #FFD700; /* Replace with your desired color (e.g., Gold) */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for better contrast */
+    color: white; /* Simple white text for name */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
 }
 
 header p {
-    font-size: 1.2rem; /* Adjust subtitle size */
-    margin: 0;
+    font-size: 1.2rem;
+    color: white; /* White for subtitle */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabs */
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 20px 0;
+    background-color: #007BFF; /* Blue background for tab container */
+    border-radius: 10px;
 }
 
 nav ul li {
     margin: 0 10px;
-}
-
-nav ul li button {
-    padding: 12px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
+    padding: 10px 20px;
+    background: white; /* White background for individual tabs */
+    color: #007BFF; /* Blue text */
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-nav ul li button:hover {
-    background-color: #4CAF50; /* Highlight on hover */
+nav ul li:hover, nav ul li.active {
+    background: #0056b3; /* Darker blue for active/hovered tabs */
+    color: white;
 }
 
+/* Tab Content */
 main {
     padding: 20px;
-    max-width: 900px; /* Wider content area */
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.9); /* Subtle background for readability */
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .tab-content {
@@ -90,32 +80,22 @@ main {
     display: block;
 }
 
-.tab-content h2 {
-    margin-top: 0;
-}
-
 footer {
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     background-color: #333;
     color: white;
-    font-size: 0.9rem;
-    margin-top: 40px;
 }
 
-/* Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .profile-picture {
-        width: 200px;
-        height: 200px;
-    }
-
-    nav ul li button {
-        padding: 10px 15px;
+    .tabs .tab {
+        padding: 8px 15px;
         font-size: 0.9rem;
     }
 
-    main {
-        padding: 15px;
+    .profile-picture {
+        width: 100px;
+        height: 100px;
     }
 }
