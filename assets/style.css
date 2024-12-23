@@ -10,8 +10,9 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
+    padding: 40px 0;
+    background: url('assets/image1.png') no-repeat center center;
+    background-size: cover; /* Makes the image fill the header */
     color: white;
 }
 
