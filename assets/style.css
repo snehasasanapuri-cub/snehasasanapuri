@@ -20,11 +20,11 @@ header {
 }
 
 .profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
