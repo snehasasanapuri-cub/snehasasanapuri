@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Compressive Strength in R</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Predicting Compressive Strength in R</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                Concrete is one of the most vital materials in civil engineering, and its compressive strength is a critical property.
+                This project investigates the nonlinear relationship between the compressive strength of concrete and its components,
+                such as cement, blast furnace slag, fly ash, water, superplasticizer, coarse aggregate, and fine aggregate, using R programming.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Preparation and EDA</h2>
+            <ul>
+                <li><strong>Dataset:</strong> Contains 1,030 observations with variables representing concrete components and age.</li>
+                <li><strong>Exploratory Analysis:</strong> Conducted distribution analysis, boxplots, and pairwise scatter plots to understand variable relationships and detect outliers.</li>
+                <li><strong>Key Insights:</strong> Variables like cement and age show linear relationships with compressive strength, while others exhibit nonlinear patterns.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Statistical Analysis</h2>
+            <h3>T-Tests</h3>
+            <p>
+                <strong>Hypotheses Tested:</strong> Differences in compressive strength based on age (<=3 days vs. >=28 days) and presence of blast furnace slag.
+                Both tests revealed statistically significant differences in means.
+            </p>
+            <h3>F-Test</h3>
+            <p>
+                The F-test showed that at least one predictor variable significantly impacts compressive strength, prompting regression modeling.
+            </p>
+        </section>
+
+        <section>
+            <h2>Regression Modeling</h2>
+            <p>
+                <strong>Multiple Linear Regression:</strong> Initial model included all predictors, followed by backward selection to refine the model.
+                Final predictors: cement, blast furnace slag, fly ash, water, and age.
+            </p>
+            <p>
+                <strong>Adjusted R²:</strong> 59.2%, indicating moderate explanatory power but highlighting potential for better models.
+            </p>
+        </section>
+
+        <section>
+            <h2>Advanced Models</h2>
+            <p>
+                <strong>Generalized Additive Models (GAM):</strong> Applied to capture complex, nonlinear relationships between predictors and response.
+                Final model explained 89.2% of variability, significantly improving prediction accuracy.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Findings</h2>
+            <ul>
+                <li>Significant predictors include cement, blast furnace slag, and age.</li>
+                <li>Nonlinear relationships were effectively captured using GAM.</li>
+                <li>GAM outperformed linear regression in accuracy and explained variance.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Visualizations</h2>
+            <p>Various plots were used to analyze relationships and validate model assumptions:</p>
+            <ul>
+                <li>Observed vs. Predicted Values</li>
+                <li>Residual Diagnostics</li>
+                <li>Scatter Plots for Cement and Age</li>
+                <p>Here are some of the visualizations generated during the analysis:</p>
+                <div class="image-container">
+                    <img src="assets/diagnostics_plots.png" class="project-image" alt="Diagnostics Plots">
+                    <p class="image-caption">Figure: Diagnostics plots</p>
+                
+                    <img src="assets/corr_plot.png" class="project-image" alt="Correlation Plot">
+                    <p class="image-caption">Figure: Correlation plot</p>
+                
+                    <img src="assets/gam.png" class="project-image" alt="GAM Model">
+                    <p class="image-caption">Figure: Generative Additive Model fitting for varying lambda</p>
+                </div>
+
+
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>
+                This project demonstrates the importance of advanced modeling techniques like GAM for predicting compressive strength
+                in highly nonlinear data. These insights can be applied to optimize concrete mixtures for construction projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>Explore the Code</h2>
+            <p>The complete code and methodology are available on my GitHub repository. Feel free to explore!</p>
+            <a href="https://github.com/snehasasanapuri-cub/r_project_strength"  target="_blank" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1rem;">
+                View on GitHubb</a>
+        </section>
+    </main>
+
+    <footer>
+        <button class="back-to-projects" onclick="window.location.href='index.html#projects';">Back to Projects</button>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG-Based Chatbot Using LangChain</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>RAG-Based Chatbot Using LangChain</h1>
+    </header>
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                This project involves building a chatbot that leverages Retrieval-Augmented Generation (RAG) using LangChain to simplify the analysis of research papers. The system processes content, stores it in Pinecone for vector-based retrieval, and uses OpenAI to generate context-aware responses to user queries. The goal is to make research paper comprehension efficient and interactive.
+            </p>
+        </section>
+
+        <!-- Goals -->
+        <section>
+            <h2>Goals</h2>
+            <ul>
+                <li>Enable users to extract meaningful insights from research papers efficiently.</li>
+                <li>Use vector-based storage for quick and accurate document retrieval.</li>
+                <li>Provide context-aware responses using OpenAI’s advanced language models.</li>
+            </ul>
+        </section>
+
+        <!-- Methodology -->
+        <section>
+            <h2>Methodology</h2>
+            <h3>Data Storage</h3>
+            <p>
+                The content of research papers is pre-processed and embedded into vector representations using OpenAI embeddings. These embeddings are stored in Pinecone, a high-performance vector database.
+            </p>
+            <h3>Query Processing</h3>
+            <p>
+                When a user asks a question, the chatbot retrieves the most relevant document chunks from Pinecone. The retrieved information is then passed to OpenAI’s GPT API to generate a natural language response.
+            </p>
+            <h3>Deployment</h3>
+            <p>
+                The system is deployed on a web interface that provides users with an intuitive way to upload documents, ask queries, and receive answers. This interface is built with Flask, HTML, CSS, and JavaScript.
+            </p>
+        </section>
+
+        <!-- Architecture -->
+        <section>
+            <h2>Architecture</h2>
+            <p>The architecture includes:</p>
+            <ul>
+                <li><strong>Frontend:</strong> A web interface for user interactions, built with Streamlit.</li>
+                <li><strong>Backend:</strong>
+                    <ul>
+                        <li>Pinecone for storing and retrieving vector embeddings of document content.</li>
+                        <li>LangChain for orchestrating retrieval and response generation workflows.</li>
+                        <li>OpenAI API for generating context-aware answers to user queries.</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="assets/chatbot_workflow.png" alt="RAG-Based Chatbot Architecture" style="width: 100%; margin-top: 20px;">
+        </section>
+
+        <!-- Results -->
+        <section>
+            <h2>Results</h2>
+            <p>
+                The chatbot was able to provide accurate, contextually relevant answers to queries based on uploaded research papers. This made the process of understanding complex documents simpler and more interactive.
+            </p>
+        </section>
+
+        <!-- Explore the Code -->
+        <section>
+            <h2>Explore the Code</h2>
+            <p>
+                The source code and implementation details of this project are available on my GitHub repository. Feel free to explore!
+            </p>
+            <a href="https://github.com/snehasasanapuri-cub/applied_deep_learning" target="_blank" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1rem;">
+                View on GitHub
+                
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <button class="back-to-projects" onclick="window.location.href='index.html#projects';">Back to Projects</button>
+    </footer>
+</body>
+</html>
+

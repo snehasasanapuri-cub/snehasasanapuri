@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Captioning System</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .intro-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .intro-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .intro-container p {
+            flex: 1; /* Ensures the text takes up remaining space */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Audio Captioning System</h1>
+    </header>
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+            <div class="intro-container">
+                <img src="assets/audio-captioning4.png" alt="Audio Captioning Visualization">
+                <p>
+                    The project focuses on designing an automated and scalable audio captioning system that generates natural language descriptions for audio files. By leveraging advanced machine learning models and cloud-native AWS services, this system processes audio clips, segments them into smaller chunks, and generates captions using a fine-tuned BART model. The project showcases the integration of AI and cloud services for multimedia processing tasks.
+                </p>
+            </div>
+        </section>
+
+        <!-- Methodology -->
+        <section>
+            <h2>Methodology</h2>
+            <h3>Data Processing</h3>
+            <p>Audio files uploaded via a user-friendly web interface are stored in AWS S3 buckets. AWS Lambda functions process these files and convert them into formats compatible with the machine learning model.</p>
+            <h3>Caption Generation</h3>
+            <p>The system uses a fine-tuned BART model hosted on AWS SageMaker for generating chunk-wise captions. OpenAI’s GPT API is integrated for summarizing captions, ensuring coherence and readability.</p>
+            <h3>Deployment</h3>
+            <p>The web application is hosted on AWS Elastic Beanstalk for a seamless user experience. Logging and monitoring are handled by AWS CloudWatch, providing insights into system performance and debugging.</p>
+        </section>
+
+        <!-- Architecture -->
+        <section>
+            <h2>Architecture</h2>
+            <ul>
+                <li><strong>Frontend:</strong> A web interface built with Flask, HTML, CSS, and JavaScript for audio upload and caption display.</li>
+                <li><strong>Backend:</strong>
+                    <ul>
+                        <li>AWS S3 for storage.</li>
+                        <li>AWS Lambda for event-driven processing.</li>
+                        <li>AWS SageMaker for caption generation.</li>
+                    </ul>
+                </li>
+                <li><strong>Summarization:</strong> OpenAI’s GPT API for consolidating chunk-wise captions.</li>
+            </ul>                
+            <!-- Add the Image -->
+            <div class="architecture-image">
+                <img src="assets/audio-captioning1.jpg" alt="Architecture of AI-Driven Music Caption Generation" style="max-width: 100%; height: auto; margin-top: 20px;">
+                <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure: Architecture of AI-Driven Music Caption Generation System</p>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section>
+            <h2>Results</h2>
+            <p>The system successfully captioned several audio files, producing high-quality and contextually accurate descriptions.</p>
+            
+            <!-- Audio Player -->
+            <h3>Listen to the Audio:</h3>
+            <audio controls>
+                <source src="assets/TunePocket-Sad-French-Accordion-Solo-30-Sec-Preview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Captions -->
+            <h3>Generated Captions:</h3>
+            <p><strong>Captions:</strong> The audio clip features a low quality recording with a sustained strings melody playing long notes in the background. The recording starts with someone playing first notes, followed by children-like and straight notes. The melody continues with deeper and weirder notes, along with childlike and enigmatic elements. Overall, the audio has a quirky and wide range of notes, creating an interesting and captivating atmosphere.</p>
+        </section>
+        
+        <!--Github Repo-->
+        <section>
+            <h2>Explore the Code</h2>
+            <p>The source code and implementation details of this project are available on my GitHub repository. Feel free to explore!</p>
+            <p>
+                <a href="https://github.com/cu-csci-4253-datacenter-fall-2024/finalproject-final-project-team-84" target="_blank" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 1rem;">
+                    View on GitHub
+                </a>
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <button class="back-to-projects" onclick="window.location.href='index.html#projects';">Back to Projects</button>
+    </footer>
+</body>
+</html>
