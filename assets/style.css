@@ -93,6 +93,37 @@ footer {
     bottom: 0;
 }
 
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 20px; /* Small icon size */
+    height: 20px;
+    margin-right: 8px; /* Space between the icon and the text */
+    vertical-align: middle;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #0047AB;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #B6D0E2;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .tabs .tab {
