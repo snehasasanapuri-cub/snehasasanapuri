@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneha Sasanapuri Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script defer src="assets/script.js"></script>
 </head>
 <body>
+    <div id="particles-js"></div> 
+
     <header>
         <div class="profile-header">
             <img src="assets/Sneha%20Professional%20photo_cropped.JPG" alt="Sneha Sasanapuri" class="profile-picture">
@@ -21,6 +24,7 @@
                 <li data-tab="projects">Projects</li>
                 <li data-tab="contact">Contact</li>
                 <li data-tab="resume">Resume</li>
+                <li data-tab="certifications">Certifications</li>
             </ul>
         </nav>
     </header>
@@ -29,7 +33,7 @@
             <h2>About Me</h2>
             <p>Hi! I’m <strong>Sneha Sasanapuri</strong>, a Data Scientist with a knack for uncovering insights and solving real-world problems using data. With over <strong>5 years</strong> of professional experience, I specialize in turning complex datasets into actionable strategies through advanced analytics and machine learning.</p>
             <p>My technical expertise spans a wide range of tools and technologies. I am proficient in <strong>Python</strong>, <strong>R</strong>, <strong>SQL</strong>, and <strong>C</strong>, and have hands-on experience with machine learning frameworks like <strong>TensorFlow</strong>, <strong>PyTorch</strong>, and <strong>Scikit-learn</strong>. For data visualization, I utilize tools such as <strong>Power BI</strong>, <strong>Tableau</strong>, and <strong>seaborn</strong>, crafting interactive dashboards and visualizations that empower data-driven decision-making.</p>
-            <p>I thrive in the cloud, leveraging <strong>AWS</strong> services like <strong>Lambda</strong>, <strong>SageMaker</strong>, and <strong>S3</strong>, combined with <strong>Docker</strong> and <strong>Kubernetes</strong>, to deploy scalable and efficient solutions. My passion for Natural Language Processing (NLP) has led me to work extensively with <strong>spaCy</strong>, <strong>NLTK</strong>, and <strong>LangChain</strong>, creating innovative systems for extracting and understanding insights from text.</p>
+            <p>I thrive in the cloud, leveraging <strong>AWS</strong> services like <strong>Lambda</strong>, <strong>SageMaker</strong>, and <strong>S3</strong>, combined with <strong>Docker</strong> and <strong>Kubernetes</strong>, to deploy scalable and efficient solutions. My passion for Natural Language Processing (NLP) has led me to work extensively with <strong>spaCy</strong>, <strong>NLTK</strong>, and <strong>LangChain</strong>, developing <strong>RAG</strong> based chatbots and <strong>LLM</strong> powered applications that enhance information retrieval and automate text-based tasks.</p>
             <p>Beyond technical skills, I bring creativity and a commitment to excellence, recognized through awards such as the <strong>Digital Ambassador of the Year</strong> for implementing automation solutions that enhanced system performance. Explore my portfolio to see how I combine technical expertise with creative problem-solving to turn data into impactful decisions.</p>
         </section>
 
@@ -45,7 +49,7 @@
                     <h3>Research Data Analytics Intern</h3>
                     <p><strong>Research & Innovation Office, University of Colorado Boulder</strong></p>
                     <p>
-                        Working as a Research Data Analytics Intern, I analyze large datasets to extract actionable insights for university operations. I collaborate with faculty to drive four types of analysis (Capacity, Sponsor. Funding & Program) building interactive dashboards to aid decision-making processes.
+                        Working as a Research Data Analytics Intern, I analyze large datasets to extract actionable insights for university operations. I collaborate with faculty to drive four types of analysis building interactive dashboards to aid decision-making processes.
                     </p>
                     <ul>
                         <li>Data Analytics</li>
@@ -53,6 +57,7 @@
                         <li>Research Collaboration</li>
                     </ul>
                 </div>
+
 
        
                 <!-- Timeline Item 2 -->
@@ -97,7 +102,7 @@
                 <!-- Timeline Item 7 -->         
         
                 <div class="timeline-item">
-                    <span class="timeline-date">Aug 2017 – Apr 2020</span>
+                    <span class="timeline-date">Aug 2018 – Apr 2020</span>
                     <h3>Data Analytics Engineer</h3>
                     <p><strong>Larsen & Toubro</strong></p>
                     <p>
@@ -131,7 +136,7 @@
         
                 <!-- Timeline Item 7 -->
                 <div class="timeline-item">
-                    <span class="timeline-date">Aug 2015 – Jul 2017</span>
+                    <span class="timeline-date">Aug 2015 – Jul 2018</span>
                     <h3>Graduate Engineer Trainee</h3>
                     <p><strong>Larsen & Toubro</strong></p>
                     <p>
@@ -147,7 +152,36 @@
 
             </div>
         </section>
-      
+
+        <section id="certifications" class="tab-content">
+            <h2>Certifications</h2>
+        
+            <!-- AWS ML Certification -->
+            <div class="certification-card">
+                <img src="assets/aws-ml-cert.png" alt="AWS Machine Learning Certificate" class="certification-logo">
+                <div class="certification-info">
+                    <h3>AWS Certified Machine Learning Engineer-Associate</h3>
+                    <ul class="certification-details">
+                        <li><strong>Issued by:</strong> Amazon Web Services (AWS)</li>
+                        <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/407d5c2592ef466eb4ec6d01aeaa3a54" target="_blank" class="certification-link">Verify Certificate</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Other Udemy Certifications (Listed as Bullet Points) -->
+            <div class="certifications-list">
+                <h3>Additional Certifications</h3>
+                <ul>
+                    <li>Power BI for Data Analysis and Visualization – Udemy</li>
+                    <li>Robotic Process Automation (RPA) with UiPath – Udemy</li>
+                    <li>The Complete SQL Bootcamp – Udemy</li>
+                    <li>Python for Time Series Data Analysis – Udemy</li>
+                    <li>Statistics for Data Science and Business Analysis - Udemy</li>
+                    <li>R Programming Specialisation for Statistical Data Analysis - Coursera</li>
+                </ul>
+            </div>
+        </section>
+        
     
 
         <section id="projects" class="tab-content">
@@ -191,6 +225,7 @@
             </div>
         </section>
 
+
         <section id="contact" class="tab-content">
             <h2>Contact</h2>
             <ul class="contact-list">
@@ -221,6 +256,8 @@
                 <button class="button">Download Resume</button>
             </a>
         </section>
+
+
     </main>
 
     <footer>
