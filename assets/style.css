@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+    position: relative;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -45,7 +46,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 10px 0;
-    margin: 20px 0;
+    margin: 2px 0;
     background-color: #0047AB; /* Blue background for tab container */
     border-radius: 10px;
 }
@@ -70,7 +71,6 @@ nav ul li:hover, nav ul li.active {
 /* Tab Content */
 main {
         flex: 1; /* Pushes the footer to the bottom of the page */
-        padding: 20px;
         max-width: 800px;
         margin: 0 auto;
 }
@@ -123,6 +123,7 @@ footer {
 .contact-list a:hover {
     color: #B6D0E2;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -292,3 +293,98 @@ footer {
 }
 
 
+/* Certifications Section */
+#certifications {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* AWS Certification Card */
+.certification-card {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* AWS Logo */
+.certification-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Certification Text */
+.certification-info {
+    flex-grow: 1;
+}
+
+/* Certification Title */
+.certification-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Small Font Bullet Points */
+.certification-details {
+    font-size: 0.9rem;
+    color: #555;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+/* Certification ID */
+.cert-id {
+    font-family: monospace;
+    color: #222;
+}
+
+/* Certification Verification Link */
+.certification-link {
+    color: #0047AB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certification-link:hover {
+    color: #B6D0E2;
+}
+
+/* Udemy Certifications List */
+.certifications-list {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certifications-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.certifications-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.certifications-list li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1; /* Ensures particles stay in the background */
+}
